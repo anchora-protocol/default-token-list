@@ -82,7 +82,7 @@
       {
         "name": "GemKeeper Finance",
         "address": "0x72Ad551af3c884d02e864B182aD9A34EE414C36C",
-        "symbol": "VS",
+        "symbol": "BLING",
         "decimals": 18,
         "chainId": 42262,
         "logoURI": "https://raw.githubusercontent.com/Anchora-Protocol/oasis-assets/mainnet/0x72Ad551af3c884d02e864B182aD9A34EE414C36C/logo.png"
