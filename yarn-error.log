@@ -1,0 +1,75 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.18/libexec/bin/yarn.js install
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.14.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@koffeeswap%2ftoken-lists: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:66138:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:140883:22)
+      at Request.emit (node:events:526:28)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:141855:10)
+      at Request.emit (node:events:526:28)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:645:28)
+      at IncomingMessage.emit (node:events:538:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "@anchora/default-token-list",
+    "version": "0.1.0",
+    "description": "The Anchora default token list",
+    "main": "build/anchora-default.tokenlist.json",
+    "scripts": {
+      "test": "mocha",
+      "build": "rimraf build && node src/makeDir.js && node src/write.js > build/koffeeswap-default.tokenlist.json",
+      "prepublishOnly": "npm test && npm run build"
+    },
+    "files": [
+      "build/anchora-default.tokenlist.json"
+    ],
+    "private": false,
+    "keywords": [
+      "anchora",
+      "anchoraswap",
+      "default",
+      "token",
+      "list"
+    ],
+    "license": "GPL-3.0-or-later",
+    "devDependencies": {
+      "@ethersproject/address": "^5.0.2",
+      "@koffeeswap/token-lists": "*",
+      "ajv": "^6.12.3",
+      "chai": "^4.2.0",
+      "mocha": "^8.0.1",
+      "rimraf": "^3.0.2"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Anchora-Protocol/default-token-list.git"
+    },
+    "author": "",
+    "bugs": {
+      "url": "https://github.com/Anchora-Protocol/default-token-list/issues"
+    },
+    "homepage": "https://github.com/Anchora-Protocol/default-token-list#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
